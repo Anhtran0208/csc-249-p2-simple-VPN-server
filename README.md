@@ -7,9 +7,8 @@ This is a VPN client-server application that supports 2 operations:
 ## How to run and test the application
 ### Set up project environment 
 - Clone the project repository
-- Navigate to the project directory: cd 
+- Navigate to the project directory: cd csc-249-p2-simple-VPN-server
 - Install dependencies: pip install -r requirements.txt
-
 
 ### Run the server
 python3 VPN.py --VPN_IP 127.0.0.1 --VPN_port 8080
