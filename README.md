@@ -33,7 +33,21 @@ python3 VPN.py --VPN_IP 127.0.0.1 --VPN_port 8080
 
 ### Command-line trace
 #### Convert time zone
-- Start the server 
-![start the server] (command-line-trace/convert/server.png)
+- Start the server
+  <img src = "command-line-trace/convert/server.png" alt="start the server">
+- Start the client:
+<img src = "command-line-trace/convert/client.png" alt="start the client">
+- Server output:
+<img src = "command-line-trace/convert/server-output.png" alt="server output">
+- Client output:
+<img src = "command-line-trace/convert/client-output.png" alt="client output">
 #### Shifting right
+- Start the server
+  <img src = "command-line-trace/shifting/server.png" alt="start the server">
+- Start the client:
+<img src = "command-line-trace/shifting/client.png" alt="start the client">
+- Server output:
+<img src = "command-line-trace/shifting/server-output.png" alt="server output">
+- Client output:
+<img src = "command-line-trace/shifting/client-output.png" alt="client output">
 If you have any issues when running application, please contact me via tran36a@mtholyoke.edu.
