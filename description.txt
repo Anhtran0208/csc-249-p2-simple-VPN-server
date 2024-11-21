@@ -1,0 +1,29 @@
+Client-VPN Message documentation
+1. Overview 
+This application is a simple VPN server and client that communicates with each other to execute 2 operations: shifting right and converting time zone. 
+- Shifting right: takes a string input and replace each character in this string with the next one in ASCII table.
+- Converting time zone: is used for converting time from one timezone to another one using pytz library from Python
+2. Client – server message format 
+<operation_type> <message_content>
+Note: 
+- operation_type are only shift_right and convert_timezone. They are not case sensitive.
+- message_content: input string for each operation
+- Example:
+o Converting time zone:  CONVERT_TIMEZONE <date> <time> <from_timezone> <to_timezone>
+* CONVERT_TIMEZONE 2024-10-19 12:00:00 UTC America/New_York
+o Shifting right: shift_right <input_string>
+* shift_right abc
+3. Server-client message format 
+Received response: <output_string>
+4.  Example input – output
+a. Converting time zone:
+- Input: CONVERT_TIMEZONE 2024-10-19 12:00:00 UTC America/New_York
+- Output: Received response: '2024-10-19 08:00:00' [19 bytes]
+b. Shifting right:
+- Input: shift_right abc 
+- Output: Received response: 'bcd' [3 bytes]
+5. Description of network layers
+- Application layer: encodes and decodes the message received from the client 
+- Transport layer: establishes reliable communication using TCP 
+- Link layer: handle data transmission
+
