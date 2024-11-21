@@ -31,4 +31,9 @@ python3 VPN.py --VPN_IP 127.0.0.1 --VPN_port 8080
     Received response: '2024-10-19 08:00:00' [19 bytes]
     client is done!
 
+### Command-line trace
+#### Convert time zone
+- Start the server 
+![start the server] (command-line-trace/convert/server.png)
+#### Shifting right
 If you have any issues when running application, please contact me via tran36a@mtholyoke.edu.
